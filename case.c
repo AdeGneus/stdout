@@ -12,11 +12,12 @@ int (*get_func(char s))(va_list *)
 		{'c', print_char},
 		{'s', print_str},
 		{'d', print_int},
+		{'i', print_uint},
 	};
 
 	int i = 0;
 
-	for (i = 0; i < 3; i++)
+	for (i = 0; i < 4; i++)
 	{
 		if (fmt[i].str == s)
 			return (fmt[i].func);

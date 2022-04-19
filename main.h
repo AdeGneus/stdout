@@ -26,5 +26,6 @@ char *__itoa(int arg_int, char *strout, int base);
 char *_itoa(int arg_int, char *strout, int base);
 char *_revstr(char *str);
 int print_int(va_list *p_int);
+int print_uint(va_list *p_int);
 
 #endif /* MAIN_H */

@@ -38,7 +38,7 @@ char *__itoa(int arg_int, char *strout, int base)
 
 
 /**
- * print_int - prints integer
+ * print_int - prints signed integer
  * @p_int: pointer to int variadic argument
  * Return: len of the string
 */
