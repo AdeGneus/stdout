@@ -20,5 +20,7 @@ typedef struct specifier
 int _printf(const char *format, ...);
 int (*get_func(char s))(va_list *);
 int print_char(va_list *c);
+int print_str(va_list *str);
+int _strlen(char *str);
 
 #endif /* MAIN_H */
