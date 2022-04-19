@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _itoa - converts integer to characters
  * @arg_int: integer to be converted
@@ -22,7 +23,7 @@ char *_itoa(unsigned int arg_int, char *strout, int base)
 	{
 		digit = arg_int % base;
 		*str = (digit > 9) ? ('A' + digit - 10) : ('0' + digit);
-		arg_int / base;
+		arg_int /= base;
 		str++;
 	}
 

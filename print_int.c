@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * __itoa - converts int to character
  * @arg_int: int argument
@@ -42,7 +43,7 @@ char *__itoa(int arg_int, char *strout, int base)
  * @p_int: pointer to int variadic argument
  * Return: len of the string
 */
-int print_int(va_list *p_int);
+int print_int(va_list *p_int)
 {
 	int len;
 	char tmp[20];
@@ -51,7 +52,7 @@ int print_int(va_list *p_int);
 	char *str = __itoa(num, tmp, 10);
 
 	len = _strlen(str);
-	write(i, str, len);
+	write(1, str, len);
 
 	return (len);
 }
