@@ -22,5 +22,9 @@ int (*get_func(char s))(va_list *);
 int print_char(va_list *c);
 int print_str(va_list *str);
 int _strlen(char *str);
+char *__itoa(int arg_int, char *strout, int base);
+char *_itoa(int arg_int, char *strout, int base);
+char *_revstr(char *str);
+int print_int(va_list *p_int);
 
 #endif /* MAIN_H */
