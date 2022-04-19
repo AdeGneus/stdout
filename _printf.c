@@ -23,6 +23,12 @@ int _printf(const char *format, ...)
 			i++; /* fast forward */
 			ch = format[i];
 
+			if (ch == '%' || format[i] == '%')
+			{
+				len += write(1, "%", 1);
+				continue;
+			}
+
 			prints = get_func(ch);
 			len += prints(&args);
 		}
